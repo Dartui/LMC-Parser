@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Little Man Computer Parser</title>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/lmc_parser.js"></script>
+		<script src="assets/js/clipboard.min.js"></script>
+		<script src="assets/js/semantic.min.js"></script>
+		<link rel="stylesheet" href="assets/css/semantic.min.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+	</head>
+	<body>
+		<div class="ui container">
+			<div class="ui top attached segment">
+				<h1 class="ui header">Little Man Computer Parser</h1>
+			</div>
+			<div class="ui form attached segment">
+				<div class="two fields">
+					<div class="field">
+						<label for="lmc_data">Kod skopiowany z "RAM" z LMC</label>
+						<textarea id="lmc_data" rows="30"></textarea>
+					</div>
+					<div class="field">
+						<div class="field">
+							<label for="lmc_output">Kod wynikowy</label>
+							<textarea id="lmc_output" rows="27" readonly="readonly"></textarea>
+						</div>
+						<button class="ui fluid disabled red button" data-clipboard-target="#lmc_output" id="copy" data-content="Skopiowano!" data-position="top center">Skopiuj do schowka</button>
+					</div>
+				</div>
+				<button id="parse" class="ui fluid blue button">Konwertuj</button>
+			</div>
+			<div class="ui bottom attached equal width grid segment">
+				<div class="column">
+					Wykonanie: <a href="http://grabania.pl/">Krzysztof Grabania</a>
+				</div>
+				<div class="right aligned column">
+					Stworzone z wykorzystaniem <a href="https://jquery.com/">jQuery</a>, <a href="http://semantic-ui.com/">Semantic-UI</a> i <a href="https://clipboardjs.com/">clipboard.js</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

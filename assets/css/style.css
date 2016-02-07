@@ -1,0 +1,12 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+div.ui.container {
+	padding-top: 3em;
+}
+
+.ui.form textarea {
+	resize: none;
+}
